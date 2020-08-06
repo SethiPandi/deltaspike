@@ -20,3 +20,13 @@ Add-ons extend the functionality of DeltaSpike and several have been developed e
 `ds-disruptor-addon` improves CDI synchronous event-processing performance by creating a disruptor process for every observer method, enabling CDI synchronous events in conjunction with asynchronous observers. This add-on currently works with Apache TomEE and JBoss AS 7. For more information about its use and implementation, see http://os890.blogspot.com.au/2014/05/faster-cdi-like-events.html[os890: [add-on\] fast event processing with disruptor + deltaspike].
 
 **Source code:** https://github.com/os890/ds-disruptor-addon
+
+== YAML4DeltaSpike
+YAML4DeltaSpike provides YAML configuration support for the DeltaSpike configuration mechanism and uses https://bitbucket.org/asomov/snakeyaml/src/master/[snakeyaml] to bind the properties to an implementation of the `MapConfigSource`.
+
+**Source code:** https://gitlab.com/Elypia/yaml4deltaspike
+
+== Converters4DeltaSpike
+Converters4DeltaSpike provides additional https://deltaspike.apache.org/javadoc/1.9.3/org/apache/deltaspike/core/api/config/ConfigResolver.Converter.html[`ConfigResolver.Converter`] implementations for various standard library classes in Java. This is helpful for applications, frameworks, or libraries, that allow configuration of things like dates, regular expressions, or enumerated types.
+
+**Source code:** https://gitlab.com/Elypia/converters4deltaspike
