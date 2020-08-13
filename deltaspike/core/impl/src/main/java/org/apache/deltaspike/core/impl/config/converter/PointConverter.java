@@ -34,8 +34,11 @@ public class PointConverter implements ConfigResolver.Converter<Point>
     private static final Pattern POINT_SPLIT = Pattern.compile("\\s*,\\s*");
 
     /**
-     * @param value The String property value to convert.
-     * @return The
+     * @param value The {@link String} property value to convert.
+     * @return A {@link Point} represented by the x and y coordinate of the input.
+     * @throws NullPointerException If the value is null.
+     * @throws IllegalArgumentException If the configuration value is an invalid representation of a {@link Point}.
+     * @throws NumberFormatException If a one of coordinates can not be parsed to an {@link Integer}.
      */
     @Override
     public Point convert(String value)
