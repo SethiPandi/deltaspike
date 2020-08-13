@@ -87,7 +87,7 @@ public class EnumConverter implements ConfigResolver.Converter<Enum>
      * <p>
      *     This allows the use of the non-qualified {@link Enum} constant name instead,
      *     and provides validation of the type of enum loaded, so an {@link IllegalArgumentException}
-     *     can be thrown instead of an {@link ClassCastException}.
+     *     can be thrown instead of a {@link ClassCastException}.
      * </p>
      *
      * @param requiredEnumType An enum class, such as {@link java.util.concurrent.TimeUnit},

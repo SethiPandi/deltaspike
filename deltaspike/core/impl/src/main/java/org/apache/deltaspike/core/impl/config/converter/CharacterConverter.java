@@ -21,7 +21,6 @@ package org.apache.deltaspike.core.impl.config.converter;
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
 import java.util.Objects;
-import java.util.regex.Pattern;
 
 /**
  * <p>
@@ -47,15 +46,13 @@ public class CharacterConverter implements ConfigResolver.Converter<Character>
     /** This prefix allows us to determine an input is a hexadecimal {@link String}. */
     private static final String HEX_PREFIX = "0x";
 
-    /** Check if the input provided is a hexadecimal {@link String}. */
-    private static final Pattern HEX_PATTERN = Pattern.compile(HEX_PREFIX + "[a-f\\d]+", Pattern.CASE_INSENSITIVE);
-
     /**
      * @param value The String property value to convert.
      * @return A {@link Character} which represents the configuration property value.
      * @throws NullPointerException If the value is null.
      * @throws IllegalArgumentException If an empty string is provided as the value.
-     * @throws NumberFormatException If a hexadecimal {@link String} is provided, but is too large.
+     * @throws NumberFormatException If a hexadecimal {@link String} is provided, but
+     * can not be parsed as an {@link Integer}.
      */
     @Override
     public Character convert(String value)
@@ -72,7 +69,7 @@ public class CharacterConverter implements ConfigResolver.Converter<Character>
             return value.charAt(0);
         }
 
-        if (HEX_PATTERN.matcher(value).matches())
+        if (value.toLowerCase().startsWith(HEX_PREFIX))
         {
             final String substring = value.substring(HEX_PREFIX.length());
             final int hex = Integer.parseInt(substring, 16);

@@ -161,19 +161,33 @@ public class ColorConverter implements ConfigResolver.Converter<Color>
     {
         Objects.requireNonNull(value);
 
-        final int length = value.length();
-        final String hexString = (length == 4 || length == 5) ? value.replaceAll("[^#]", "$0$0") : value;
-
-        switch (hexString.length())
+        switch (value.length())
         {
+            case 4:
+                return new Color(
+                    Integer.parseInt(value.substring(1, 2), 16) * 17,
+                    Integer.parseInt(value.substring(2, 3), 16) * 17,
+                    Integer.parseInt(value.substring(3, 4), 16) * 17
+                );
+            case 5:
+                return new Color(
+                    Integer.parseInt(value.substring(1, 2), 16) * 17,
+                    Integer.parseInt(value.substring(2, 3), 16) * 17,
+                    Integer.parseInt(value.substring(3, 4), 16) * 17,
+                    Integer.parseInt(value.substring(4, 5), 16) * 17
+                );
             case 7:
-                return Color.decode(hexString);
+                return new Color(
+                    Integer.parseInt(value.substring(1, 3), 16),
+                    Integer.parseInt(value.substring(3, 5), 16),
+                    Integer.parseInt(value.substring(5, 7), 16)
+                );
             case 9:
                 return new Color(
-                    Integer.parseInt(hexString.substring(1, 3), 16),
-                    Integer.parseInt(hexString.substring(3, 5), 16),
-                    Integer.parseInt(hexString.substring(5, 7), 16),
-                    Integer.parseInt(hexString.substring(7, 9), 16)
+                    Integer.parseInt(value.substring(1, 3), 16),
+                    Integer.parseInt(value.substring(3, 5), 16),
+                    Integer.parseInt(value.substring(5, 7), 16),
+                    Integer.parseInt(value.substring(7, 9), 16)
                 );
             default:
                 throw new IllegalArgumentException("Invalid hexadecimal color provided, if literal value decoding " +
