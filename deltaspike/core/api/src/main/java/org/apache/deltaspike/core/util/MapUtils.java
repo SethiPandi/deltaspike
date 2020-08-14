@@ -16,8 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.deltaspike.yamlconfiguration.impl;
+package org.apache.deltaspike.core.util;
 
+import javax.enterprise.inject.Typed;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringJoiner;
@@ -28,7 +29,8 @@ import java.util.StringJoiner;
  *
  * @since 1.9.5
  */
-public final class MapUtils
+@Typed
+public abstract class MapUtils
 {
     /**
      * Don't construct this class, you should only be using

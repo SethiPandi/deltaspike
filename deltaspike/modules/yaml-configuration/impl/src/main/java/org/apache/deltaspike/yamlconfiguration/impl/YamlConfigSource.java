@@ -19,6 +19,7 @@
 package org.apache.deltaspike.yamlconfiguration.impl;
 
 import org.apache.deltaspike.core.impl.config.MapConfigSource;
+import org.apache.deltaspike.core.util.MapUtils;
 
 import java.io.InputStream;
 import java.util.Map;

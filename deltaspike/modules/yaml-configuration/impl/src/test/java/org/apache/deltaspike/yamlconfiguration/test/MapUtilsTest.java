@@ -18,7 +18,7 @@
  */
 package org.apache.deltaspike.yamlconfiguration.test;
 
-import org.apache.deltaspike.yamlconfiguration.impl.MapUtils;
+import org.apache.deltaspike.core.util.MapUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
