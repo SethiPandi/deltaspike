@@ -29,7 +29,6 @@ import java.util.Objects;
  * format. If this isn't possible we'll read the value as a literal {@link Long} so
  * it can be interpretted as unix time.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  * @see <a href="https://en.wikipedia.org/wiki/Unix_time">Unix Time on Wikipedia</a>
  */

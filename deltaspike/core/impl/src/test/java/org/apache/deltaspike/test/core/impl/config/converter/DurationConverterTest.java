@@ -26,7 +26,6 @@ import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
 /**
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class DurationConverterTest

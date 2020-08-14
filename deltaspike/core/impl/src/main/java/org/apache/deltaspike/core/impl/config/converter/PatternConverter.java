@@ -26,7 +26,6 @@ import java.util.regex.Pattern;
 /**
  * Converts a regular expression into a Java {@link Pattern} object.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class PatternConverter implements ConfigResolver.Converter<Pattern>

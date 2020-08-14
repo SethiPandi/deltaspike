@@ -26,7 +26,6 @@ import java.time.DayOfWeek;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class EnumConverterTest

@@ -37,7 +37,6 @@ import java.util.Objects;
  *     <code>5000</code> (5000 {@link ChronoUnit#MILLIS}).</li>
  * </ul>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class DurationConverter implements ConfigResolver.Converter<Duration>

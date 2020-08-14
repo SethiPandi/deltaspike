@@ -44,7 +44,6 @@ import java.util.regex.Pattern;
  *     </li>
  * </ul>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class EnumConverter implements ConfigResolver.Converter<Enum>

@@ -24,7 +24,6 @@ import java.io.File;
 import java.util.Objects;
 
 /**
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class FileConverter implements ConfigResolver.Converter<File>

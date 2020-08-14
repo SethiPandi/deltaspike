@@ -39,7 +39,6 @@ import java.util.Objects;
  *     </li>
  * </ul>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class PeriodConverter implements ConfigResolver.Converter<Period>

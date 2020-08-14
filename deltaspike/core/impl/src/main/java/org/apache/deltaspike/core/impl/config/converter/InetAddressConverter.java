@@ -27,7 +27,6 @@ import java.util.Objects;
 /**
  * For converting configuration property values to an IP address.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  * @see <a href="https://en.wikipedia.org/wiki/Inet_address">IP Address on Wikipedia</a>
  */

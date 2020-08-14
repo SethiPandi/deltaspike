@@ -26,7 +26,6 @@ import java.util.UUID;
 /**
  * Convert a configuration property value to a {@link UUID}.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class UuidConverter implements ConfigResolver.Converter<UUID>

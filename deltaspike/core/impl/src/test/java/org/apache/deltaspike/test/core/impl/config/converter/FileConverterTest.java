@@ -26,7 +26,6 @@ import org.junit.Test;
 import java.io.File;
 
 /**
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class FileConverterTest

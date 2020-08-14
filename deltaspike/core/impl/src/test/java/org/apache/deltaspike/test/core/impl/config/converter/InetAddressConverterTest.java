@@ -27,7 +27,6 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class InetAddressConverterTest

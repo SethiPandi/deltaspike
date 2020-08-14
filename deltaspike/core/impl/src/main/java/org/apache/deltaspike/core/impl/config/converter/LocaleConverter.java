@@ -26,7 +26,6 @@ import java.util.Objects;
 /**
  * Converts a localization pattern into a Java {@link Locale} object.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class LocaleConverter implements ConfigResolver.Converter<Locale>

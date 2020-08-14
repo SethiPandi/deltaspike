@@ -32,7 +32,6 @@ import java.util.stream.Collectors;
  * This also can be extended to support filtering of URL components
  * such as {@link URL#getProtocol()} for more specialized use or validation.
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class UrlConverter implements ConfigResolver.Converter<URL>

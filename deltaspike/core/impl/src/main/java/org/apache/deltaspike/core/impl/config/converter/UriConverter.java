@@ -27,7 +27,6 @@ import java.util.Objects;
 /**
  * <p>Converts a {@link String} to a Java {@link URI} instance.</p>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class UriConverter implements ConfigResolver.Converter<URI>

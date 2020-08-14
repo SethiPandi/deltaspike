@@ -39,7 +39,6 @@ import java.util.regex.Pattern;
  *
  * <p>The dimensions must not be negative, and must be {@link Integer} values.</p>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class DimensionConverter implements ConfigResolver.Converter<Dimension>

@@ -46,7 +46,6 @@ import java.util.Objects;
  *     prefix your value with <code>0x</code> instead of {@link #HEX_COLOR_PREFIX}.
  * </p>
  *
- * @author seth@elypia.org (Seth Falco)
  * @since 1.9.5
  */
 public class ColorConverter implements ConfigResolver.Converter<Color>
